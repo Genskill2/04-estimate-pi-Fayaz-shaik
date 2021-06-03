@@ -3,9 +3,9 @@
 #include <stdio.h>
 #include <math.h>
 
-float wallis_pi(int count){
+float wallis_pi(int cont){
     float pi = 1.0;
-    for (int i = 1; i < count; i++){
+    for (int i = 1; i <= cont; i++){
         float num = 4.0 * i * i;
         pi *= num / (num - 1);
     }
